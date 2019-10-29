@@ -142,4 +142,6 @@
 * **This expansion should be simplified using a Computer Algebra System (CAS) to improve performance.**
 * **Here is a video demonstrating this technique in 3D, with three distortions:**
 
+https://youtu.be/Usenu_oLqL4
+
 [![](http://img.youtube.com/vi/Usenu_oLqL4/0.jpg)](http://www.youtube.com/watch?v=Usenu_oLqL4 "3D Algebraic Modeling Demo by Skye Adaire")
