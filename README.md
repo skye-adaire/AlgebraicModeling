@@ -20,6 +20,7 @@
 
 * **Since our function _f(x,y)_ is defined for all positions _<x, y>_, and not just where _f(x, y) = 0_ then we can generalize it's output to be _f(x, y) = level_.**
 * **Here, we can see that the _distortion_ caused by _f(x, y)_ affects all of 2D space. We have chosen the gaussian since it _isolates_ its effect to values of _x_ within a range of _x = 0_.**
+* https://www.shadertoy.com/view/WscSRr
 * https://en.wikipedia.org/wiki/Level_set
 
 ---
@@ -52,6 +53,7 @@
 * **While the real line and half plane images are _open_ or _unbounded_ here we see that the superellipse is _bounded_.**
 * **We will continue to use bounded image functions, and can consider this the _body_ in traditional modeling terms.**
 * **This body is only shaded near the surface as an artistic decision, but it could be filled and have any texture on it, and that would be distorted as well.**
+* https://www.shadertoy.com/view/Wd3Szr
 
 
 ---
@@ -90,4 +92,12 @@
 ![Slide12](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.012.png)
 ![Slide13](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.013.png)
 
-* **The hyperplane is shown in yellow, the level curves are colored by floating point fractional, and the surface is colored by normal.**
+* **The hyperplane is shown in yellow, the level curves are colored by floating point fractional, and the surface of the body is colored by normal.**
+* https://www.shadertoy.com/view/3stSRr
+
+---
+
+![Slide14](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.014.png)
+* **If we want to restrict the distortion region, we can define an _isolation function  _0 <= iso(x, y) <= 1_**
+* **We can then _isolate_ the distortion by multiplying the isolation output onto the distortion function, so our domain distortion _d(<x, y>) = <x, y - iso(x, y) * f(x)>_**
+* https://www.shadertoy.com/view/3dtXRr
