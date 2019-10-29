@@ -47,6 +47,7 @@
 ---
 
 ![Slide7](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.007.png)
+![Slide8](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.008.png)
 
 * **While the real line and half plane images are _open_ or _unbounded_ here we see that the superellipse is _bounded_.**
 * **We will continue to use bounded image functions, and can consider this the _body_ in traditional modeling terms.**
