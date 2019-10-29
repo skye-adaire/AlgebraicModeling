@@ -71,7 +71,7 @@
 
 ![Slide9](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.009.png)
 
-* **So far, our distortion function _f(x)_ has been fixed to the conventional form real line, centered at <0, 0> and horizontal with the view.**
+* **So far, our distortion function _f(x)_ has been fixed to the commonly used idea of the real line, centered at <0, 0> and horizontal with the view.**
 * **Our distortion function _f(x)_ can be thought of as _relative_ to this line, but we could also make it relative to any other line.**
 * **We can generalize this relationship to any number of dimensions by thinking of distortions as being relative to _hyperplanes_.**
 * **Just as a line is a hyperplane in 2D, what we usually call a "plane" is a hyperplane in 3D.**
@@ -85,13 +85,13 @@
 
 ![Slide10](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.010.png)
 
-* **Instead we will use _homogeneous model matrix transformations_ which are very well known in graphics.**
+* **Instead we will use _homogeneous model matrix transformations_ which are very well known in computer graphics.**
 * **It is helpful to think of the _default hyperplane_ that the matrix will transform, and that our distortion function _f(x)_ will be relative to.**
 * **In 2D, our default hyperplane is the real line _y = 0_, which can be thought of as centered at <0, 0> with normal <0, 1>. In 3D, it can be thought of as centered at <0, 0, 0> with normal <0, 0, 1>.**
 1. **Choose a model matrix with the desired origin, and rotation.**
 2. **Use the inverse of the model matrix to pull the _global-relative_ position _<x, y>_ into the model space, so that it is relative to our desired hyperplane.**
 3. **Apply the _domain distortion d(<x, y>)_ in the _hyperplane-relative_ space.**
-4. **Transform the distorted position back to _global-relative_ using the model matrix.**
+4. **Transform the distorted position back to _global-relative_ space using the model matrix.**
 * https://en.wikipedia.org/wiki/Transformation_matrix
 
 <br><br>
@@ -118,7 +118,7 @@
 
 ![Slide14](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.014.png)
 * **If we want to restrict the distortion region, we can define an _isolation function  iso(x, y), _0 <= iso(x, y) <= 1_. This is used in the hyperplane-relative space.**
-* **We can then _isolate_ the distortion by multiplying the isolation output onto the distortion function, so our domain distortion _d(<x, y>) = <x, y - iso(x, y) * f(x)>_**
+* **We can then _isolate_ the distortion by multiplying the isolation output onto the distortion function, so our domain distortion becomes _d(<x, y>) = <x, y - iso(x, y) * f(x)>_**
 * https://www.shadertoy.com/view/3dtXRr
 
 <br><br>
@@ -142,7 +142,7 @@
 * **This expansion should be simplified using a Computer Algebra System (CAS) to improve performance.**
 * **Here is a video demonstrating this technique in 3D, with three distortions:**
 * https://youtu.be/Usenu_oLqL4
-* **I've not implemented the expression simplification, so performance after the first distortion is very poor. When I click down, a distortion begins. When I release click, the distortion is compiled into a polynomial, and a new fragment shader is generated to render it.**
+* **I've not implemented the expression simplification, so performance after the first distortion is very poor. When I click down, a distortion begins with a hyperplane centered on the intersection. When I release click, the distortion is compiled into a polynomial, and a new fragment shader is generated to render it.**
 
 [![](http://img.youtube.com/vi/Usenu_oLqL4/0.jpg)](http://www.youtube.com/watch?v=Usenu_oLqL4 "3D Algebraic Modeling Demo by Skye Adaire")
 
