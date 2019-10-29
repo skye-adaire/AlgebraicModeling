@@ -42,3 +42,12 @@
 ![Slide6](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.006.png)
 
 * **This is a slightly different image function, where we have not restricted shading to the real line, but instead shade the whole negative half plane. If the image of a distorted position is negative, we shade it. The color used is based on the gradient of the function.**
+
+
+---
+
+![Slide7](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.007.png)
+
+* **While the real line and half plane images are _open_ or _unbounded_ here we see that the superellipse is _bounded_.**
+* **We will continue to use bounded image functions, and can consider this the _body_ in traditional modeling terms.**
+* **This body is only shaded near the surface as an artistic decision, but it could be filled and have any texture on it, and that would be distorted as well.**
