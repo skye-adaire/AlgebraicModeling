@@ -98,6 +98,6 @@
 ---
 
 ![Slide14](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.014.png)
-* **If we want to restrict the distortion region, we can define an _isolation function  _0 <= iso(x, y) <= 1_**
+* **If we want to restrict the distortion region, we can define an _isolation function  iso(x, y), _0 <= iso(x, y) <= 1_. This is used in the hyperplane-relative space.**
 * **We can then _isolate_ the distortion by multiplying the isolation output onto the distortion function, so our domain distortion _d(<x, y>) = <x, y - iso(x, y) * f(x)>_**
 * https://www.shadertoy.com/view/3dtXRr
