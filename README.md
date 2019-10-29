@@ -141,7 +141,15 @@
 * **If the image function is algebraic, the distortion function is analytic, and the domain distortion uses linear algebra, then all of this can be expanded into a single polynomial in variables x, y for 2D or x, y, z for 3D.**
 * **This expansion should be simplified using a Computer Algebra System (CAS) to improve performance.**
 * **Here is a video demonstrating this technique in 3D, with three distortions:**
-
-https://youtu.be/Usenu_oLqL4
+* https://youtu.be/Usenu_oLqL4
+* **I've not implemented the expression simplification, so performance after the first distortion is very poor. When I click down, a distortion begins. When I release click, the distortion is compiled into a polynomial, and a new fragment shader is generated to render it.**
 
 [![](http://img.youtube.com/vi/Usenu_oLqL4/0.jpg)](http://www.youtube.com/watch?v=Usenu_oLqL4 "3D Algebraic Modeling Demo by Skye Adaire")
+
+<br><br>
+---
+<br><br><br>
+
+## END
+
+**I'm looking for a job! Check out my resume at** https://github.com/skye-adaire/resume
