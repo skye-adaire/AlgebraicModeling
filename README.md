@@ -4,7 +4,7 @@
  * **The basic idea is that we will start with an _implicit_ shape, like a sphere, then produce a chain of _domain distortions_ that will bend the sphere into a desired shape.**
  * **The end result is a single polynomial that describes the shape we want.**
  
-<br><br><br>
+<br><br>
 ---
 <br><br><br>
 
@@ -16,7 +16,7 @@
 * **For all positions _<x, y>_ in the space, the positions with _f(x, y) = 0_ are on the _image_ of the real line.**
 * https://en.wikipedia.org/wiki/Implicit_function
 
-<br><br><br>
+<br><br>
 ---
 <br><br><br>
 
@@ -27,7 +27,7 @@
 * https://www.shadertoy.com/view/WscSRr
 * https://en.wikipedia.org/wiki/Level_set
 
-<br><br><br>
+<br><br>
 ---
 <br><br><br>
 
@@ -36,7 +36,7 @@
 * **We define the _domain distortion d(<x, y>)_ which takes a position, and outputs a position. The output is related to the input by our _distortion functiton f(x)_. We are still using the same _f(x)_ from the first slide.**
 * https://www.iquilezles.org/www/articles/warp/warp.htm
 
-<br><br><br>
+<br><br>
 ---
 <br><br><br>
 
@@ -45,7 +45,7 @@
 * **We define the _image function i(x, y)_ as the body we want to distort. So far, we have been distorting the real line _y = 0_.**
 * **For 2D the _image function i_ is any picture or function we can render on the plane. For 3D, it is any implicit or volumetric function that can be rendered in a volume, like a sphere or mandlebulb fractal.**
 
-<br><br><br>
+<br><br>
 ---
 <br><br><br>
 
@@ -53,7 +53,7 @@
 
 * **This is a slightly different image function, where we have not restricted shading to the real line, but instead shade the whole negative half plane. If the image of a distorted position is negative, we shade it. The color used is based on the gradient of the function.**
 
-<br><br><br>
+<br><br>
 ---
 <br><br><br>
 
@@ -65,7 +65,7 @@
 * **This body is only shaded near the surface as an artistic decision, but it could be filled and have any texture on it, and that would be distorted as well.**
 * https://www.shadertoy.com/view/Wd3Szr
 
-<br><br><br>
+<br><br>
 ---
 <br><br><br>
 
@@ -79,7 +79,7 @@
 * **This is really just a way of thinking. We will be using the idea of hyperplanes implicitly. We won't need any data structures or intersection routines for the planes.**
 * https://en.wikipedia.org/wiki/Hyperplane
 
-<br><br><br>
+<br><br>
 ---
 <br><br><br>
 
@@ -94,7 +94,7 @@
 4. **Transform the distorted position back to _global-relative_ using the model matrix.**
 * https://en.wikipedia.org/wiki/Transformation_matrix
 
-<br><br><br>
+<br><br>
 ---
 <br><br><br>
 
@@ -102,7 +102,7 @@
 
 * **We can think of the image function as being defined in global space.**
 
-<br><br><br>
+<br><br>
 ---
 <br><br><br>
 
@@ -112,7 +112,7 @@
 * **The hyperplane is shown in yellow, the level curves are colored by floating point fractional, and the surface of the body is colored by normal.**
 * https://www.shadertoy.com/view/3stSRr
 
-<br><br><br>
+<br><br>
 ---
 <br><br><br>
 
@@ -121,7 +121,7 @@
 * **We can then _isolate_ the distortion by multiplying the isolation output onto the distortion function, so our domain distortion _d(<x, y>) = <x, y - iso(x, y) * f(x)>_**
 * https://www.shadertoy.com/view/3dtXRr
 
-<br><br><br>
+<br><br>
 ---
 <br><br><br>
 
