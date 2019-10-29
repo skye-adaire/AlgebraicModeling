@@ -52,3 +52,29 @@
 * **While the real line and half plane images are _open_ or _unbounded_ here we see that the superellipse is _bounded_.**
 * **We will continue to use bounded image functions, and can consider this the _body_ in traditional modeling terms.**
 * **This body is only shaded near the surface as an artistic decision, but it could be filled and have any texture on it, and that would be distorted as well.**
+
+
+---
+
+![Slide9](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.009.png)
+
+* **So far, our distortion function _f(x)_ has been fixed to the conventional form real line, centered at <0, 0> and horizontal with the view.**
+* **Our distortion function _f(x)_ can be thought of as _relative_ to this line, but we could also make it relative to any other line.**
+* **We can generalize this relationship to any number of dimensions by thinking of distortions as being relative to _hyperplanes_.**
+* **Just as a line is a hyperplane in 2D, what we usually call a "plane" is a hyperplane in 3D.**
+* **We can construct hyperplanes by defining them as having an origin and normal.**
+* **This is really just a way of thinking. We will be using the idea of hyperplanes implicitly. We won't need any data structures or intersection routines for the planes.**
+* https://en.wikipedia.org/wiki/Hyperplane
+
+---
+
+![Slide10](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.010.png)
+
+* **Instead we will use _homogeneous model matrix transformations_ which are very well known in graphics.**
+* **It is helpful to think of the _default hyperplane_ that the matrix will transform, and that our distortion function _f(x)_ will be relative to.**
+* **In 2D, our default hyperplane is the real line _y = 0_, which can be thought of as centered at <0, 0> with normal <0, 1>. In 3D, it can be thought of as centered at <0, 0, 0> with normal <0, 0, 1>.**
+1. **Choose a model matrix with the desired origin, and rotation.**
+2. **Use the inverse of the model matrix to pull the _global-relative_ position _<x, y>_ into the model space, so that it is relative to our desired hyperplane.**
+3. **Apply the _domain distortion d(<x, y>)_ in the _hyperplane-relative_ space.**
+4. **Transform the distorted position back to _global-relative_ using the model matrix.**
+* https://en.wikipedia.org/wiki/Transformation_matrix
