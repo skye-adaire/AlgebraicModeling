@@ -1,6 +1,6 @@
 ![Slide1](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.001.png)
 
- * **Algebraic modeling is a way to design shapes in 2D and 3D using polynomials.**
+ * **Algebraic modeling is a way to design 2D and 3D shapes using polynomials.**
  * **The basic idea is that we will start with an _implicit_ shape, like a sphere, then produce a chain of _domain distortions_ that will bend the sphere into a desired shape.**
  * **The end result is a single polynomial that describes the shape we want.**
  
