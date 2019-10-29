@@ -144,8 +144,6 @@
 * https://youtu.be/Usenu_oLqL4
 * **I've not implemented the expression simplification, so performance after the first distortion is very poor. When I click down, a distortion begins with a hyperplane centered on the intersection. When I release click, the distortion is compiled into a polynomial, and a new fragment shader is generated to render it.**
 
-[![](http://img.youtube.com/vi/Usenu_oLqL4/0.jpg)](http://www.youtube.com/watch?v=Usenu_oLqL4 "3D Algebraic Modeling Demo by Skye Adaire")
-
 <br><br><br>
 
 ## END
