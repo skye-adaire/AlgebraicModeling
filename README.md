@@ -78,3 +78,16 @@
 3. **Apply the _domain distortion d(<x, y>)_ in the _hyperplane-relative_ space.**
 4. **Transform the distorted position back to _global-relative_ using the model matrix.**
 * https://en.wikipedia.org/wiki/Transformation_matrix
+
+---
+
+![Slide11](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.011.png)
+
+* **We can think of the image function as being defined in global space.**
+
+---
+
+![Slide12](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.012.png)
+![Slide13](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.013.png)
+
+* **The hyperplane is shown in yellow, the level curves are colored by floating point fractional, and the surface is colored by normal.**
