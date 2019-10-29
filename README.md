@@ -138,11 +138,11 @@
 ![Slide17](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.017.png)
 
 * **So far, we have only used one distortion, but we can have any number of distortions, and the user can produce them in a sequence.**
-* **If the image function is algebraic, the distortion function is analytic, and the domain distortion uses linear algebra, then all of this can be expanded into a single polynomial in variables x, y for 2D or x, y, z for 3D.**
+* **If the image function is algebraic, the distortion function is analytic, and the domain distortion uses linear algebra, then all of this can be expanded into a single polynomial in variables x, y (for 2D) or x, y, z (for 3D).**
 * **This expansion should be simplified using a Computer Algebra System (CAS) to improve performance.**
 * **Here is a video demonstrating this technique in 3D, with three distortions:**
 * https://youtu.be/Usenu_oLqL4
-* **I've not implemented the expression simplification, so performance after the first distortion is very poor. When I click down, a distortion begins with a hyperplane centered on the intersection. When I release click, the distortion is compiled into a polynomial, and a new fragment shader is generated to render it.**
+* **I've not implemented expression simplification, so performance after the first distortion is very poor. When I click down, a distortion begins with a hyperplane centered on the intersection. When I release, the distortion is compiled into a polynomial, and a new fragment shader is generated to render it.**
 
 <br><br><br>
 
