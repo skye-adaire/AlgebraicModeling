@@ -129,3 +129,17 @@
 * **Some choices of isolation function can create _holes_.**
 * **There may be a cleaner way to make holes precisely, but I've not formulated it yet.**
 * https://www.shadertoy.com/view/WsdSRr
+
+<br><br>
+---
+<br><br><br>
+
+![Slide16](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.016.png)
+![Slide17](https://github.com/skye-adaire/AlgebraicModeling/blob/master/media/Algebraic%20Modeling.017.png)
+
+* **So far, we have only used one distortion, but we can have any number of distortions, and the user can produce them in a sequence.**
+* **If the image function is algebraic, the distortion function is analytic, and the domain distortion uses linear algebra, then all of this can be expanded into a single polynomial in variables x, y for 2D or x, y, z for 3D.**
+* **This expansion should be simplified using a Computer Algebra System (CAS) to improve performance.**
+* **Here is a video demonstrating this technique in 3D, with three distortions:**
+
+[![3D Demo](http://img.youtube.com/vi/gn8cXpIPFGA/0.jpg)](http://www.youtube.com/watch?v=gn8cXpIPFGA)
