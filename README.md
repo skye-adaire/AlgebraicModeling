@@ -146,8 +146,6 @@
 
 [![](http://img.youtube.com/vi/Usenu_oLqL4/0.jpg)](http://www.youtube.com/watch?v=Usenu_oLqL4 "3D Algebraic Modeling Demo by Skye Adaire")
 
-<br><br>
----
 <br><br><br>
 
 ## END
