@@ -147,5 +147,3 @@
 <br><br><br>
 
 # END
-
-**I'm looking for a job! Check out my resume at** https://github.com/skye-adaire/resume
